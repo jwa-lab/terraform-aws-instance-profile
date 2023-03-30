@@ -1,4 +1,4 @@
-resource "aws_iam_instance_profile" "instances_profile" {
-  name = "${var.name}-instance-profile"
-  role = aws_iam_role.instance_role.name
+resource "aws_iam_instance_profile" "instance_profile" {
+  name = var.name
+  role = aws_iam_role.instance_profile_role.name
 }

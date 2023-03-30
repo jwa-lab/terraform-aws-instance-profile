@@ -1,4 +1,4 @@
-resource "aws_iam_role" "instance_role" {
+resource "aws_iam_role" "instance_profile_role" {
   name = var.name
 
   permissions_boundary = var.permissions_boundary_policy_arn
